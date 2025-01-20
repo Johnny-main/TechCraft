@@ -3,8 +3,7 @@ import fs from 'fs';
 import path from 'path';
 
 // Use an absolute path to avoid issues in production environments
-const filePath = path.resolve('./public/teamdata.json');
-
+const filePath = path.join('/tmp', 'teamdata.json');
 interface Team {
   name: string;
   time: string;
